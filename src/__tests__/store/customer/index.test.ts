@@ -67,7 +67,7 @@ describe("testing", () => {
     expected = put({ type: "success", response: input });
     expect(actual).toStrictEqual(expected);
 
-    // runLilThang()
+    // thing()
     input = { id: 123, items: [{ id: "one" }, { id: "two" }] };
     actual = gen.next(input).value;
     expected = select(CustomerSelectors.selectActiveOrder);
